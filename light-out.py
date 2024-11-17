@@ -10,7 +10,7 @@ def create_board(size):
 def print_board(board):
     """ボードをコンソールに表示"""
     for row in board:
-        print('　'.join(['白' if cell == 0 else '黒' for cell in row]))
+        print('　'.join(['◯' if cell == 0 else '●' for cell in row]))
     print()
 
 def toggle_cell(board, x, y):
@@ -54,7 +54,3 @@ while not is_solved(board):
 #クリアした場合
 print("クリア！")
 print_board(board)
- 
-
-
-
