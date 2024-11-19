@@ -6,22 +6,29 @@ body{
 
 #game-board{
     display: grid;
-    grid-template-columns: repeat(5, 60px);
+    grid-template-columns: repeat(5, 50px);
     gap: 5px;
     justify-content: center;
-    margin-top: 20px;
+    margin-bottom: 20px;
 
 }
 
 .cell{
-    width: 60px;
-    height: 60px;
-    background-color: #000;
-    border: 1px solid #ccc;
+    width: 50px;
+    height: 50px;
+    background-color: yellow;
+    border: 1px solid #000;
     cursor: pointer;
 
 }
 
 .cell.off{
-    background-color: #fff;
+    background-color: #000;
+}
+
+button {
+    margin: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
 }
